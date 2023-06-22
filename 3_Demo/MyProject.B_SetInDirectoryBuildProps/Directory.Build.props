@@ -1,0 +1,10 @@
+<Project>
+	<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+	
+	<!-- prefix all projects with company name and application name -->
+	<PropertyGroup>
+		<RootNamespace>MyCompany.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<AssemblyName>MyCompany.$(MSBuildProjectName)</AssemblyName>
+		<PackageId>$(AssemblyName)</PackageId>
+	</PropertyGroup>
+</Project>

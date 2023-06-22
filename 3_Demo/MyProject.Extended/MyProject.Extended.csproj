@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>MyCompany.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<AssemblyName>MyCompany.$(MSBuildProjectName)</AssemblyName>
+		<PackageId>$(AssemblyName)</PackageId>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\MyProject.A_SetInProject\MyProject.A_SetInProject.csproj" />
+	  <ProjectReference Include="..\MyProject.B_SetInDirectoryBuildProps\MyProject.B_SetInDirectoryBuildProps.csproj" />
+	  <ProjectReference Include="..\MyProject.C_SetInNuGetPackage\MyProject.C_SetInNuGetPackage.csproj" />
+	</ItemGroup>
+</Project>

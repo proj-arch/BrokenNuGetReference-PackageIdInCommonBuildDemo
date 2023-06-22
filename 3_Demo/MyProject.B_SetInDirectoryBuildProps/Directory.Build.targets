@@ -1,0 +1,12 @@
+<Project>
+	<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))" />
+	
+	<!-- Log the properties -->
+	<Target Name="LogSetInDirectoryBuildPropsForMyProjectBProperties" AfterTargets="PrepareForBuild">
+		<Message Importance="High" Text="==MyProject.B_SetInDirectoryBuildProps Properties Begin==" />
+		<Message Importance="High" Text="RootNamespace = '$(RootNamespace)'" />
+		<Message Importance="High" Text="AssemblyName = '$(AssemblyName)'" />
+		<Message Importance="High" Text="PackageId = '$(PackageId)'" />
+		<Message Importance="High" Text="==MyProject.B_SetInDirectoryBuildProps Properties End==" />
+	</Target>
+</Project>
