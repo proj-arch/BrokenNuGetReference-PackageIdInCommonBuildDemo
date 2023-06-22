@@ -1,0 +1,8 @@
+﻿<Project>
+	<PropertyGroup>
+		<!-- set company name as prefix -->
+		<RootNamespace>MyCompany.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<AssemblyName>MyCompany.$(MSBuildProjectName)</AssemblyName>
+		<PackageId>$(AssemblyName)</PackageId>
+	</PropertyGroup>
+</Project>

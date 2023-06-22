@@ -1,0 +1,10 @@
+<Project>
+    <!-- Log all properties that are set by CommonBuild -->
+    <Target Name="LogCommonBuildProperties" AfterTargets="PrepareForBuild">
+		<Message Importance="High" Text="==CommonBuild_Properties Begin ($(MSBuildProjectName))==" />
+        <Message Importance="High" Text="RootNamespace = '$(RootNamespace)'" />
+        <Message Importance="High" Text="AssemblyName = '$(AssemblyName)'" />
+		<Message Importance="High" Text="PackageId = '$(PackageId)'" />
+		<Message Importance="High" Text="==CommonBuild_Properties End ($(MSBuildProjectName))==" />
+    </Target>
+</Project>
