@@ -1,8 +1,8 @@
 # BrokenNuGetReference-PackageIdInCommonBuildDemo
 Demonstrates the broken package reference that results from defining the PackageId of a referenced project in a *.props-file of another NuGet package.
 
-Issues
-https://github.com/dotnet/sdk/issues/33528
+Issues  
+https://github.com/dotnet/sdk/issues/33528  
 https://github.com/NuGet/Home/issues/12544
 
 ## Steps to reproduce
